@@ -70,25 +70,23 @@ h3, h4{
 }
 
 h1{
-    font-size: 1.8rem;
-    text-align: center;
+    font-size: 1.6rem;
+    color: #5c3b8a;
     background: #d8c6e3;
-    padding: 0.6rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 15px;
     display: inline-block;
-    margin-bottom: 1.5rem;
 }
 
 h2{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: #e07ab1;
     margin-bottom: 1rem;
 }
 
 h3{
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #e07ab1;
-    margin: 0.5rem 0;
 }
 
 p{
@@ -136,7 +134,7 @@ img {
 .card img,
 .pet img{
     background: white;
-    padding: 8px;
+    padding: 10px;
     border-radius: 6px;
 }
 
@@ -179,11 +177,22 @@ nav.active{
 }
 /* hero section */
 
+header {
+    background-color: #e6cde3;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 120px;
+}
 .hero{
     background: #cbb6d9;
     border-radius: 20px;
+    margin: 1rem; 
     padding: 1.5rem;
-    margin: 1rem;
     text-align: center;
 }
 
@@ -197,9 +206,37 @@ nav.active{
     background: #e9c7de;
     padding: 1rem;
     border-radius: 10px;
-    border: 4px solid white;
+    border: 5px solid white;
 }
 
+/* hamburger */
+.menu-toggle {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #e07ab1;
+    cursor: pointer;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #e6cde3;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav a {
+    padding: 1rem;
+    color: #a04a8a;
+}
+
+nav.active {
+    display: flex;
+}
 /* buttons */
 
 a{
@@ -226,7 +263,7 @@ a{
 .cards{
     display: flex; 
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .card{
