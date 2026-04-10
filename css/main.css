@@ -50,3 +50,10 @@ table {
 /* Main Css starts */
 
 /* Fonts */
+
+@font-face {
+    font-family: 'Beauty Rachela';
+    src: url(../fonts/BeautyRachela-Regular.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
