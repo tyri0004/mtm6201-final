@@ -51,6 +51,7 @@ table {
 
 /* Fonts */
 
+/* main heading */
 @font-face {
     font-family: 'Beauty Rachela';
     src: url(../fonts/BeautyRachela-Regular.otf) format('truetype');
@@ -60,4 +61,15 @@ table {
 
 h1, h2{
     font-family: 'Beauty Rachela', cursive;
+}
+/* sub-headings */
+
+h3, h4 {
+    font-family: 'Elsie', serif;
+
+}
+
+/* body text */
+body, p, li, a, button{
+    font-family: 'Capriola', san-serif;
 }
