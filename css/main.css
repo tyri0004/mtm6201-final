@@ -69,6 +69,32 @@ h3, h4 {
 
 }
 
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    background: #d8c6e3;
+    padding: 0.6rem 1rem;
+    border-radius: 15px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #e07ab1;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+    color: #e07ab1;
+    margin: 0.5rem 0;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
 /* body text */
 body, p, li, a{
     font-family: 'Capriola', san-serif;
@@ -93,9 +119,18 @@ section{
     padding: 3rem 1.5rem;  
 }
 
-img{
+img {
     width: 100%;
-    border-radius: 12px;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-content img,
+.card img,
+.pet img {
+    background: white;
+    padding: 8px;
+    border-radius: 6px;
 }
 
 /* header */
