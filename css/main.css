@@ -54,7 +54,7 @@ table {
 /* main heading */
 @font-face {
     font-family: 'Beauty Rachela';
-    src: url(../fonts/BeautyRachela-Regular.otf) format('truetype');
+    src: url(../fonts/BeautyRachela-Regular.otf) format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -70,6 +70,27 @@ h3, h4 {
 }
 
 /* body text */
-body, p, li, a, button{
+body, p, li, a{
     font-family: 'Capriola', san-serif;
+}
+
+/* home page mobile styles */
+
+body{
+
+    background-color: #7a5aa6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* layout */
+
+section{
+    padding: 2rem 1rem;  
+}
+
+img{
+    width: 100%;
+    display: block; 
+    border-radius: 10px;
 }
