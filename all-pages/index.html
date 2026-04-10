@@ -16,6 +16,7 @@
         <div class="logo">
             <img src="../images/logo.png" alt="the logo for the company including a vector dog and cat">
         </div>
+        <button class="menu-toggle">☰</button>
         <nav>
             <a href="../all-pages/index.html">Home</a>
             <a href="../all-pages/about.html">About</a>
@@ -27,7 +28,7 @@
     <main>
 
         <!-- Hero Section -->
-        <section class="hero">
+        <section class="hero fade-in">
             <h1>Welcome to Pawsitive Futures</h1>
 
             <div class="hero-content">
@@ -41,7 +42,7 @@
            </div>
         </section>
         <!-- Success Stories Section -->
-        <section class="success">
+        <section class="success fade-in">
                 <h2>Success Stories</h2>
 
                 <div class="cards">
@@ -63,7 +64,7 @@
                 </div>
            </section>
            <!-- Adopt Section -->
-            <section class="adopt">
+            <section class="adopt fade-in">
                 <h2>Pets Available to Adopt</h2>
 
                 <div class="pet">
@@ -112,7 +113,7 @@
 
             <!-- Support Us Section -->
 
-            <section class="support">
+            <section class="support fade-in">
                 <h2>Want to Support Us?</h2>
 
                 <div class="support-content">
@@ -125,7 +126,7 @@
             </section>
 
             <!-- Contact Call to Action -->
-             <section class="contact-cta">
+             <section class="contact-cta fade-in">
                 <h2>Want to Reach Out?</h2>
                 <img src="../images/contact-mail.png" alt="contact icon">
                 <a href="#" class="btn">Contact Us!</a>
@@ -134,31 +135,16 @@
 
     <!-- footer -->
     <footer>
-        <div class="footer-links">
-            <a href="../all-pages/index.html">Home</a>
-            <a href="../all-pages/about.html">About</a>
-            <a href="../all-pages/adopt.html">Adopt</a>
-            <a href="#">Get Involved</a>
-            <a href="#">Contact</a>
-        </div>
-
-        <div class="footer-info">
-            <p>Phone: 123-456-7891</p>
-            <p>Email: pawsitivefutures@gmail.com</p>
-        </div>
-
-        <div class="social">
-            <img src="../images/instagram.png" alt="instagram">
-            <img src="../images/facebook-app-symbol.png" alt="facebook">
-        </div>
-
-        <div class="footer-logo">
-            <img src="../images/logo.png" alt="Pawsitive futures logo">
-        </div>
-
-        <div class="copyright">
-            <p>Copyright Pawsitive Futures 2026</p>
-        </div>
+        <p>&copy;Pawsitive Futures 2026</p>
     </footer>
+
+    <script>
+const toggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+</script>
 </body>
 </html>
