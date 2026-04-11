@@ -158,66 +158,23 @@ img {
 
 
 /************ HEADER *************/
-
-.menu-toggle {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-
-}
-
-nav a{
-    padding: 0.7rem;
-    text-decoration: none;
-    color: #a04a8a;
-}
-
-nav.active{
-    display: flex; 
-}
-/* hero section */
-
-header {
+header{
     background-color: #e6cde3;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     position: relative; 
-    z-index: 100; 
 }
 
-.logo img {
+.logo img{
     max-width: 120px;
 }
-.hero{
-    background: #cbb6d9;
-    border-radius: 20px;
-    margin: 1rem; 
-    padding: 2rem 1.5rem;
-    text-align: center;
-}
 
-.hero-content{
-    display: flex; 
-    flex-direction: column; 
-    gap: 1rem; 
-}
-
-.mission {
-    background: #e9c7de;
-    padding: 1rem;
-    border-radius: 10px;
-    border: 5px solid white;
-}
-
-/* hamburger */
-.menu-toggle {
+/***************** NAV  *************************/
+.menu-toggle{
     font-size: 2rem;
     background: none;
-    border: none;
     color: #e07ab1;
     cursor: pointer;
 }
@@ -231,39 +188,68 @@ nav {
     background: #e6cde3;
     flex-direction: column;
     text-align: center;
-    z-index: 999;
+    z-index: 9999;
 }
 
-nav a {
-    padding: 1rem;
+nav.active{
+    display: flex; 
+}
+
+nav a{
+    padding: 0.7rem;
     color: #a04a8a;
-}
-
-nav.active {
-    display: flex;
-}
-/* buttons */
-
-a{
     text-decoration: none;
+    transition: 0.3s; 
 }
+
+nav a:hoverr{
+    background: #d8c6e3;
+    color: #6a3c91;
+}
+
+/****************** HERO ***************/
+.hero{
+    background: #cbb6d9;
+    border-radius: 20px;
+    margin: 1rem; 
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-content{
+    display: flex; 
+    flex-direction: column; 
+    gap: 1rem; 
+}
+
+.mission{
+    background: #e9c7de;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid white;
+}
+
+/********************* BUTTONS ****************/
 
 .btn, .cta {
     background: #6a3c91;
     color: #f5b3d1;
-    padding: 0.7rem 1.5rem;
-    border-radius: 25px;
+    padding: 0.8rem 1.6rem;
+    border-radius: 30px;
     display: inline-block;
     margin-top: 1rem;
-    text-align: center;
+    font-weight: bold; 
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .btn:hover, .cta:hover{
-    transform: scale(1.05); 
     background: #4e2c6f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 14px rgba(0,0,0,0.3);
 }
 
-/* cards */
+/************ CARDS **************/
 
 .cards{
     display: flex; 
@@ -276,13 +262,14 @@ a{
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
+    transition: 0.3s;
 }
 
 .card:hover{
     transform: translateY(-5px);
 }
 
-/* Pets */
+/************** PETS **********/
 
 .pet{
     display: flex; 
@@ -290,13 +277,13 @@ a{
     gap: 1rem; 
 }
 
-.pet div {
+.pet div{
     background: #f3d98c;
     padding: 1rem;
     border-radius: 10px;
 }
 
-/* support */
+/****************** SUPPORT ****************/
 
 .support-content{
     display: flex;
@@ -304,22 +291,21 @@ a{
     gap: 1rem;
 }
 
-/* contact */
+/************** CONTACT ***********/
 
 .contact-cta {
     background: #e07ab1;
     border-radius: 20px;
     margin: 1rem;
     padding: 2rem 1rem;
-    text-align: left;
+    text-align: center;
 }
 
-.contact-cta h2 {
-    color: #ffe38c; /* yellow like mockup */
-    margin-bottom: 1rem;
+.contact-cta h2{
+    color: #ffe38c;
 }
 
-/* footer */
+/******************* FOOTER *************/
 
 footer{
     text-align: center;
