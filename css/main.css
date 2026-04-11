@@ -49,98 +49,95 @@ table {
 
 /* Main Css starts */
 
-/* Fonts */
+/*************** FONTS *******************/
 
 /* main heading */
 @font-face {
     font-family: 'Beauty Rachela';
-    src: url(../fonts/BeautyRachela-Regular.otf) format('opentype');
-    font-weight: normal;
-    font-style: normal;
+    src: url(../fonts/BeautyRachela-Regular.otf);
+
 }
+
+body{
+    font-family: 'Capriola', sans-serif;
+    background: #7a5aa6;
+    line-height: 1.6;
+}
+
+/**************** TYPOGRAPHY *******************/
 
 h1, h2{
     font-family: 'Beauty Rachela', cursive;
 }
-/* sub-headings */
 
-h3, h4{
+h3{
     font-family: 'Elsie', serif;
-
 }
 
 h1{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #5c3b8a;
     background: #d8c6e3;
-    padding: 0.5rem 1rem;
-    border-radius: 15px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
     display: inline-block;
 }
 
 h2{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #e07ab1;
     margin-bottom: 1rem;
 }
 
 h3{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #e07ab1;
 }
 
 p{
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
-/* body text */
-body, p, li, a{
-    font-family: 'Capriola', san-serif;
-}
-/* skip links */
-.skip-links {
+
+
+/********** SKIP LINKS ****************/
+
+.skip-links{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 9999;
 }
 
-.skip-links a {
+.skip-links a{
     position: absolute;
     left: -999px;
-    top: 0;
     background: #000;
     color: #fff;
-    padding: 10px 16px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 10px;
 }
 
-.skip-links a:focus {
+.skip-links a:focus{
     left: 10px;
     top: 10px;
 }
-/* home page mobile styles */
 
-body{
-
-    background-color: #7a5aa6;
-    line-height: 1.6;
-}
+/******************* LAYOUT ****************/
 
 main{
     max-width: 1100px;
     margin: 0 auto;
 }
 
-/* layout */
-
 section {
     padding: 2rem 1rem;
 }
 
+img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
 .cards {
     gap: 1.5rem;
 }
@@ -148,34 +145,19 @@ section {
 .pet {
     gap: 1.5rem;
 }
-img {
-    width: 100%;
-    display: block;
-    border-radius: 8px;
-}
+
 
 .hero-content img,
 .card img,
-.pet img{
+.pet img, 
+.support img{
     background: white;
     padding: 10px;
     border-radius: 6px;
 }
 
-.hero,
-.card,
-.pet div,
-.mission,
-.contact-cta {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-/* header */
 
-header{
-    background-color: #e6cde3;
-    padding: 1rem; 
-    text-align: center; 
-}
+/************ HEADER *************/
 
 .menu-toggle {
     font-size: 2rem;
@@ -183,11 +165,6 @@ header{
     border: none;
     cursor: pointer;
 
-}
-
-nav{
-    display: none; 
-    flex-direction: column;
 }
 
 nav a{
@@ -207,6 +184,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: relative; 
+    z-index: 100; 
 }
 
 .logo img {
@@ -216,7 +196,7 @@ header {
     background: #cbb6d9;
     border-radius: 20px;
     margin: 1rem; 
-    padding: 1.5rem;
+    padding: 2rem 1.5rem;
     text-align: center;
 }
 
@@ -245,12 +225,13 @@ header {
 nav {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 100%;
     left: 0;
     width: 100%;
     background: #e6cde3;
     flex-direction: column;
     text-align: center;
+    z-index: 999;
 }
 
 nav a {
