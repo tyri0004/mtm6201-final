@@ -12,12 +12,21 @@
 
 </head>
 <body>
+
+    <!-- skip links -->
+    <div class="skip-links">
+        <a href="#main-content">Skip to Main Content</a>
+        <a href="#primary-nav">Skip to Navigation</a>
+        <a href="#adopt-section">Skip to Adopt Section</a>
+        <a href="#footer">Skip to Footer</a>
+    </div>
+     
     <header>
         <div class="logo">
             <img src="../images/logo.png" alt="the logo for the company including a vector dog and cat">
         </div>
         <button class="menu-toggle">☰</button>
-        <nav>
+        <nav id="primary-nav" role="navigation" aria-label="Main Navigation">
             <a href="../all-pages/index.html">Home</a>
             <a href="../all-pages/about.html">About</a>
             <a href="#">Get Involved</a>
@@ -25,7 +34,7 @@
             <a href="#">Contact</a>
         </nav>
     </header>
-    <main>
+    <main id="main-content" role="main">
 
         <!-- Hero Section -->
         <section class="hero fade-in">
@@ -64,7 +73,7 @@
                 </div>
            </section>
            <!-- Adopt Section -->
-            <section class="adopt fade-in">
+            <section id="adopt-section "class="adopt fade-in" aria-labelledby="adopt-heading">
                 <h2>Pets Available to Adopt</h2>
 
                 <div class="pet">
@@ -134,7 +143,7 @@
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer id="footer" role="contentinfo">
         <p>&copy;Pawsitive Futures 2026</p>
     </footer>
 
