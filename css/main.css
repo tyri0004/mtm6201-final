@@ -83,6 +83,9 @@ h1{
 }
 
 h2{
+    background-color: #d8c6e3;
+    padding: 2rem; 
+    border-radius: 10px;
     font-size: 2rem;
     color: #e07ab1;
     margin-bottom: 1rem;
