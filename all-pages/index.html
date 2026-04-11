@@ -27,7 +27,7 @@
         <div class="logo">
             <img src="../images/logo.png" alt="the logo for the company including a vector dog and cat" itemprop="logo">
         </div>
-        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">☰</button>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
         <nav id="primary-nav" role="navigation" aria-label="Main Navigation">
             <a href="../all-pages/index.html">Home</a>
             <a href="../all-pages/about.html">About</a>
@@ -40,14 +40,14 @@
 
         <!-- Hero Section -->
         <section class="hero fade-in" aria-labelledby="hero-heading">
-            <h1 id="hero-heading">Welcome to Pawsitive Futures</h1>
+            <h1 id="hero-heading" itemprop="name">Welcome to Pawsitive Futures</h1>
 
             <div class="hero-content">
                 <img src="../images/dog-one-ear.jpeg" alt="Dog with one ear down" itemprop="image">
             
                 <div class="mission">
                     <h2>Mission</h2>
-                    <p>At Pawsitive Futures, our mission is to give every animal the opportunity for a safe, loving, and permanent home. We are dedicated to rescuing, caring for, and rehoming pets while promoting responsible pet ownership and compassion for animals in our community. Through adoption, education, and advocacy, we strive to create brighter, pawsitive futures for pets and the families who welcome them into their lives.</p>
+                    <p itemprop="description">At Pawsitive Futures, our mission is to give every animal the opportunity for a safe, loving, and permanent home. We are dedicated to rescuing, caring for, and rehoming pets while promoting responsible pet ownership and compassion for animals in our community. Through adoption, education, and advocacy, we strive to create brighter, pawsitive futures for pets and the families who welcome them into their lives.</p>
                     <a href="../all-pages/about.html" class="btn">Learn More</a>
                 </div>
            </div>
@@ -151,11 +151,14 @@
 
 <script>
     const toggle = document.querySelector('.menu-toggle');
-    const nav = document.querySelector('nav');
+    const nav = document.querySelector('#primary-nav');
 
     toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
+        nav.classList.toggle('active');
+
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !expanded);
+    });
 </script>
 </body>
 </html>
