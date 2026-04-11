@@ -82,9 +82,7 @@ h1{
     display: inline-block;
 }
 
-h2{
-    background-color: #d8c6e3;
-    padding: 2rem; 
+h2{ 
     border-radius: 10px;
     font-size: 2rem;
     color: #e07ab1;
