@@ -97,7 +97,31 @@ p{
 body, p, li, a{
     font-family: 'Capriola', san-serif;
 }
+/* skip links */
+.skip-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
+.skip-links a {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: #000;
+    color: #fff;
+    padding: 10px 16px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.skip-links a:focus {
+    left: 10px;
+    top: 10px;
+}
 /* home page mobile styles */
 
 body{
