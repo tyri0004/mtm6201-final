@@ -8,5 +8,86 @@
 </head>
 <body>
     
+    <!-- skip links -->
+    <div class="skip-links">
+        <a href="#main-content">Skip to Main Content</a>
+        <a href="#primary-nav">Skip to Navigation</a>
+        <a href="#success-heading">Skip to Success Stories</a>
+        <a href="#adopt-section">Skip to Adopt Section</a>
+        <a href="#contact-heading">Skip to Contact</a>
+        <a href="#footer">Skip to Footer</a>
+    </div> 
+        <div class="logo">
+            <img src="images/logo.png" alt="the logo for the company including a vector dog and cat" itemprop="logo">
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="primary-nav">☰</button>
+        <nav id="primary-nav" role="navigation" aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="../all-pages/about.html">About</a>
+            <a href="#">Get Involved</a>
+            <a href="../all-pages/adopt.html">Adopt</a>
+            <a href="#">Contact</a>
+        </nav>
+    <header>
+
+    </header>
+    <main>
+
+    </main>
+    <footer id="footer" role="contentinfo">
+        <div class="footer-container">
+
+            <!-- footer nav -->
+            <nav class="footer-nav" aria-label="Footer Navigation">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-pages/about.html">About</a></li>
+                    <li><a href="#">Get Involved</a></li>
+                    <li><a href="all-pages/adopt.html">Adopt</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- contact info -->
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="#">info@pawsitivefutures.com</a></p>
+                <p>Phone: <a href="#">(613) 123-4567</a></p>
+                <p>Location: Ottawa, ON</p>
+            </div>
+
+            <!-- socials -->
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#" aria-label="Visit our Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Visit our Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Visit our Twitter">Twitter</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- copyright -->
+        <div class="footer-bottom">
+            <p>&copy; Pawsitive Futures 2026</p>
+        </div>
+
+    </footer>
+
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('#primary-nav');
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+
+            const expanded = toggle.getAttribute('aria-expanded') === 'true';
+            toggle.setAttribute('aria-expanded', !expanded);
+        });
+    </script>
+    </footer>
 </body>
 </html>
