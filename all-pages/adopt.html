@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/AnimalShelter">
     
     <!-- skip links -->
     <div class="skip-links">
@@ -35,7 +35,33 @@
             <a href="#">Contact</a>
         </nav>
     </header>
-    <main>
+    <main id="main-content" role="main">
+        <!-- adoption process -->
+         <section class="section adopt-process fade-in">
+            <h1>Our Adoption Process!</h1>
+
+            <div class="process-cards">
+
+                <div class="card process" role="article">
+                    <img src="../images/paws.png" alt="vector drawing of pink paws">
+                    <h2>1: Find your Perfect Match</h2>
+                    <p>Browse our available cats and dogs to learn about their personalities, needs, and the type of home they would thrive in.</p>
+                </div>
+                <div class="card process" role="article">
+                    <img src="../images/resume.png" alt="vector drawing of a document">
+                    <h2>2: Meet and Apply</h2>
+                    <p>Submit an adoption application and schedule a meet-and-greet so you can spend time with the pet and make sure it’s a great fit for both of you.</p>
+                </div>
+                <div class="card process" role="article">
+                    <img src="../images/house.png" alt="vector drawing of a house with trees">
+                    <h2>3: Bring Home</h2>
+                    <p>Once your adoption is approved, complete the final paperwork and welcome your new companion into their forever home.</p>
+                </div>
+            </div>
+         </section>
+         
+        <!-- dogs section -->
+         
 
     </main>
     <footer id="footer" role="contentinfo">
@@ -46,9 +72,9 @@
                 <h3>Quick Links</h3>
                 <ul>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="all-pages/about.html">About</a></li>
+                    <li><a href="../all-pages/about.html">About</a></li>
                     <li><a href="#">Get Involved</a></li>
-                    <li><a href="all-pages/adopt.html">Adopt</a></li>
+                    <li><a href="../all-pages/adopt.html">Adopt</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -91,6 +117,5 @@
             toggle.setAttribute('aria-expanded', !expanded);
         });
     </script>
-    </footer>
 </body>
 </html>
