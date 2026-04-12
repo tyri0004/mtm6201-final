@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/AnimalShelter">
 
     <!-- skip links -->
     <div class="skip-links">
@@ -22,7 +22,7 @@
         <a href="#contact-heading">Skip to Contact</a>
         <a href="#footer">Skip to Footer</a>
     </div>
-    <header>
+    <header role="banner">
         <div class="logo">
             <img src="../images/logo.png" alt="the logo for the company including a vector dog and cat" itemprop="logo">
         </div>
@@ -36,24 +36,24 @@
             <a href="#">Contact</a>
         </nav>
     </header>
-    <main id="main-content">
+    <main id="main-content" role="main">
         <!-- about section -->
-        <section class="section about">
+        <section class="section about fade-in">
             <div class="container">
 
-                <h1 class="section-title">About Pawsitive Futures!</h1>
+                <h1 class="section-title" item-prop="name">About Pawsitive Futures!</h1>
 
                 
-                <div class="card about-card">
+                <div class="card about-card" role="article">
                     <picture>
                         <source srcset="../images/teen-cat-600px-large.jpeg" media="(max-width: 600px)">
-                        <img src="../images/teen-cat-1400px-large.jpeg" alt="teen smiling while holding a cat">
+                        <img src="../images/teen-cat-1400px-large.jpeg" alt="teen smiling while holding a cat" itemprop="image">
                     </picture>
 
                     <!-- Mission -->
                     <div class="card-content">
                         <h2>Our Mission</h2>
-                        <p>
+                        <p itemprop="description">
                             At Pawsitive Futures, our mission is to rescue, care for, and find loving forever homes for
                             animals in need. We believe every pet deserves safety, compassion, and the chance to live a
                             happy life with a family that will cherish them. Through responsible adoption, quality care,
@@ -72,16 +72,16 @@
                 </div>
 
                 <!-- History -->
-                <div class="card about-card">
+                <div class="card about-card" role="article">
                     <picture>
                         <source srcset="../images/women-cat-600px-small.jpeg" media="(max-width: 600px)">
-                        <img src="../images/women-cat-1400px-large.jpeg" alt="woman snuggling cat">
+                        <img src="../images/women-cat-1400px-large.jpeg" alt="woman snuggling cat" itemprop="image">
                     </picture>
                     
 
                     <div class="card-content">
                         <h2>Our History</h2>
-                        <p>
+                        <p itemprop="description">
                             Pawsitive Futures was founded with a simple but powerful goal: to give animals in need a
                             second chance at a loving home. What began as a small effort by a group of passionate animal
                             lovers quickly grew into a dedicated adoption organization focused on rescuing,
@@ -108,31 +108,31 @@
         </section>
 
         <!-- Impact Section -->
-         <section class="section impact">
+         <section class="section impact fade-in">
             <div class="container">
 
                 <h2 class="section-title">Our Impact</h2>
 
-                <div class="card">
+                <div class="card" role="article">
                     <picture>
                         <source srcset="../images/rocky-dog-600px-small.jpeg" media="(max-width: 600px)">
-                    <img src="../images/rocky-dog-1400px-large.jpeg" alt="golden named rocky laying on carpet">
+                    <img src="../images/rocky-dog-1400px-large.jpeg" alt="golden named rocky laying on carpet" itemprop="image" sizes="(max-width: 600px) 100vw, 50vw">
                     </picture>
                     <h3>Rocky's Second Chance</h3>
                     <p>Rocky arrived at Pawsitive Futures underweight and scared, but with care and training he regained his strength and trust before being adopted by a loving family, where he now enjoys playing in the yard and going on long hikes.</p>
                 </div>
-                <div class="card">
+                <div class="card" role="article">
                     <picture>
                         <source srcset="../images/sunshine-cat-600px-small.jpeg" media="(max-width: 600px)">
-                        <img src="../images/sunshine-cat-1400px-large.jpeg" alt="golden named rocky laying on carpet">
+                        <img src="../images/sunshine-cat-1400px-large.jpeg" alt="cat named sunshine looking up at leaves" itemprop="image" sizes="(max-width: 600px) 100vw, 50vw">
                     </picture>
                     <h3>A Compainion</h3>
                     <p>After retiring, Michael felt lonely, but adopting Bella from Pawsitive Futures brought him companionship, purpose, and the comfort of a loyal friend.</p>
                 </div>
-                <div class="card">
+                <div class="card" role="article">
                     <picture>
                         <source srcset="../images/dog-one-ear-600px-small.jpeg" media="(max-width: 600px)">
-                        <img src="../images/dog-one-ear-1400px-large.jpeg" alt="golden named rocky laying on carpet">
+                        <img src="../images/dog-one-ear-1400px-large.jpeg" alt="dog with one ear down" itemprop="image" sizes="(max-width: 600px) 100vw, 50vw">
                     </picture>
                     <h3>From Rescue to Best Friend</h3>
                     <p>When the Patel family visited Pawsitive Futures, they met Rocco, an energetic puppy who bonded with their children and quickly became a joyful, beloved part of their family.</p>
@@ -243,7 +243,6 @@
             toggle.setAttribute('aria-expanded', !expanded);
         });
     </script>
-    </footer>
 </body>
 
 </html>
