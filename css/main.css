@@ -575,21 +575,21 @@ footer a:hover{
 
 @media screen and (min-width: 768px){
 
-    h2{
+    .section h2{
         font-size: 1.6rem;
     }
-    p{
+    .section p{
         font-size: 0.8rem;
     }
     main{
         padding: 0 1rem;  
     }
 
-    .menu-toggle {
+    .menu-toggle{
         display: none;
     }
 
-    nav {
+    nav{
         display: flex !important;
         position: static;
         flex-direction: row;
@@ -654,10 +654,11 @@ footer a:hover{
     .process-cards h2{
         font-size: 1rem;
     }
+
      /* ABOUT: Mission + History side-by-side */
 
     /* ABOUT WRAPPER */
-    .about .container {
+    .about .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -668,23 +669,23 @@ footer a:hover{
     }
 
     /* TITLE */
-    .about .container h1 {
+    .about .container h1{
         grid-area: title;
         text-align: center;
     }
 
     /* FIRST CARD */
-    .about .about-card:nth-of-type(1) {
+    .about .about-card:nth-of-type(1){
         grid-area: mission;
     }
 
     /* SECOND CARD  */
-    .about .about-card:nth-of-type(2) {
+    .about .about-card:nth-of-type(2){
         grid-area: history;
     }
 
     /* PETS start grid feel */
-    .section.pets {
+    .section.pets{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
@@ -692,28 +693,28 @@ footer a:hover{
     }
 
     /* make the heading span all three columns */
-    .section.pets h2 {
+    .section.pets h2{
         grid-column: 1 / -1;
     }
 
-    .pet-card {
+    .pet-card{
         margin: 0;
     }
-    .impact .container {
+    .impact .container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2rem;
         align-items: start;
     }
 
-    .impact .container h2 {
+    .impact .container h2{
         grid-column: 1 / -1;
         text-align: center;
     }
 
 
     /* SUPPORT section side-by-side feel */
-    .support-content {
+    .support-content{
         flex-direction: row;
         align-items: stretch;
     }
