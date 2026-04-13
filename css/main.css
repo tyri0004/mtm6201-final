@@ -782,19 +782,6 @@ footer a:hover{
     }
 
     /* pets */
-    .adopt .pets .pet-card img {
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-    }
-
-    .adopt .pets .pet-card p {
-        font-size: 0.75rem;
-    }
-
-    .adopt .pets .pet-card h3 {
-        font-size: 1rem;
-    }
     .adopt .pets {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
