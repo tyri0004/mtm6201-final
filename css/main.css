@@ -148,8 +148,21 @@ main{
     margin: 0 auto;
 }
 
-section {
-    padding: 2rem 1rem;
+.section {
+    background: #cbb6d9;
+    border-radius: 25px;
+
+    margin: 2rem 1rem;
+    padding: 2rem 1.5rem;
+
+    box-shadow: 0 8px 0 #b79acb;
+    position: relative;
+}
+
+.section .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* ✅ consistent spacing */
 }
 
 .section::before {
@@ -344,6 +357,14 @@ nav a:hover{
     box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
+.cards,
+.process-cards,
+.pets {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 .card img{
     width: 95%;
 }
@@ -402,6 +423,13 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+
+    background: #f3d98c;
+    padding: 1rem;
+    border-radius: 15px;
+
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.15);
+    border: 3px solid white;
 }
 
 /****************** SUPPORT ****************/
