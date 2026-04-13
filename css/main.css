@@ -575,6 +575,12 @@ footer a:hover{
 
 @media screen and (min-width: 768px){
 
+    h2{
+        font-size: 1.6rem;
+    }
+    p{
+        font-size: 0.8rem;
+    }
     main{
         padding: 0 1rem;  
     }
@@ -645,6 +651,9 @@ footer a:hover{
         padding: 2rem;
     }
 
+    .process-cards h2{
+        font-size: 1rem;
+    }
      /* ABOUT: Mission + History side-by-side */
 
     /* ABOUT WRAPPER */
