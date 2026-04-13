@@ -604,6 +604,10 @@ footer a:hover{
         justify-content: flex-start;
         flex-wrap: wrap;
     }
+
+    .footer-nav h3{
+        display: none;
+    }
     .cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -633,6 +637,20 @@ footer a:hover{
         width: 45%;
     }
 
+     /* ABOUT: Mission + History side-by-side */
+     /* ABOUT SECTION: Mission + History side-by-side */
+    .about .container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        align-items: stretch;
+    }
+
+    .about .about-card {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
     /* PETS start grid feel */
     .pets {
         display: grid;
@@ -649,4 +667,6 @@ footer a:hover{
         flex-direction: row;
         align-items: stretch;
     }
+
+    
 }
