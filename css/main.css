@@ -569,3 +569,24 @@ footer a:hover{
         transform: translateY(10px);
     }
 }
+
+
+/******************* TABLET STYLES ****************/
+
+@media screen and(min-width: 786px){
+
+    main{
+        padding: 0 1rem;  
+    }
+
+    .hero-content{
+        flex-direction: row;
+        align-items: center; 
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .hero-content img{
+        max-width: 45%;
+    }
+}
