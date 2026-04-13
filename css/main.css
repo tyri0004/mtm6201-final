@@ -573,7 +573,7 @@ footer a:hover{
 
 /******************* TABLET STYLES ****************/
 
-@media screen and (min-width: 786px){
+@media screen and (min-width: 768px){
 
     main{
         padding: 0 1rem;  
@@ -639,10 +639,28 @@ footer a:hover{
 
      /* ABOUT: Mission + History side-by-side */
 
-    .about-card{
+     /* ABOUT WRAPPER */
+    .about .container {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "title title"
+            "mission history";
+        gap: 2rem;
+        align-items: start;
     }
+
+    /* TITLE spans full width */
+    .about .container h1 {
+        grid-area: title;
+        text-align: center;
+    }
+
+    /* FIRST CARD = Mission */
+    .about .about-card:nth-of-type(1) {
+        grid-area: mission;
+    }
+    
     /* PETS start grid feel */
     .pets {
         display: grid;
