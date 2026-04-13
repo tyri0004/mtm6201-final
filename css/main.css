@@ -638,18 +638,10 @@ footer a:hover{
     }
 
      /* ABOUT: Mission + History side-by-side */
-     /* ABOUT SECTION: Mission + History side-by-side */
-    .about .container {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        align-items: stretch;
-    }
 
-    .about .about-card {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
+    .about-card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
     /* PETS start grid feel */
     .pets {
