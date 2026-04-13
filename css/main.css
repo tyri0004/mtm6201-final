@@ -88,19 +88,14 @@ h1 {
 }
 
 h2 {
+    font-size: 1.8rem;
     background: #ffe38c;
-    padding: 0.4rem 1rem;
-    display: inline-block;
-    box-shadow: 2px 2px 0 #e07ab1;
-}
-
-
-
-h2{ 
-    border-radius: 10px;
-    font-size: 2rem;
     color: #e07ab1;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    display: inline-block;
     margin-bottom: 1rem;
+    box-shadow: 2px 2px 0 #e07ab1;
 }
 
 h3{
