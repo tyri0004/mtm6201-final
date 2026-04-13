@@ -427,10 +427,21 @@ nav a:hover{
     border-radius: 15px;
     box-shadow: 6px 6px 0 rgba(0,0,0,0.15);
     border: 3px solid white;
-    max-width: 320px;     /* 🔥 key fix */
+    max-width: 320px; 
     margin: 0 auto;
 }
 
+.pet-card {
+    transform: rotate(-1.5deg);
+}
+
+.pet-card:nth-child(even) {
+    transform: rotate(1.5deg);
+}
+
+.pet-card:nth-child(3n) {
+    transform: rotate(-0.5deg);
+}
 /****************** SUPPORT ****************/
 
 .support-content{
