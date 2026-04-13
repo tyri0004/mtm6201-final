@@ -315,7 +315,7 @@ nav a:hover{
     margin: 2rem auto 4rem auto;
 }
 
-.cta a {
+.cta a{
     text-decoration: none;
     color: #6a3c91;
     font-weight: bold;
@@ -368,7 +368,7 @@ nav a:hover{
 }
 
 /* tape */
-.card::before {
+.card::before{
     content: "";
     position: absolute;
     top: -12px;
@@ -386,7 +386,7 @@ nav a:hover{
 .pets{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
 }
 
 .card img{
@@ -413,6 +413,11 @@ nav a:hover{
     padding-top: 1rem;
 }
 
+#process-icon{
+    background: #f3ddf0;
+}
+
+
 /************** PETS **********/
 
 #adopt-section{
@@ -430,7 +435,6 @@ nav a:hover{
     background: #e9c7de;
     padding: 2rem 1rem;
     border-radius: 20px;
-
     box-shadow: inset 0 0 0 6px #ffffff40;
 }
 .card img,
@@ -450,12 +454,6 @@ nav a:hover{
     border-radius: 10px;
 }
 
-.process-cards,
-.pets{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
 
 .pet-card{
     display: flex;
