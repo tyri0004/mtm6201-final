@@ -288,12 +288,22 @@ nav a:hover{
 }
 
 #adopt-btn{
-    display: inline-block;/* don’t stretch full width */
-    width: auto; /* shrink to content */
-    padding: 1rem 2rem;/* smaller padding */
-    font-size: 1.5rem;/* scale text down */
+    padding: 1rem 2rem !important;   /* override big padding */
+    font-size: 1.5rem;
+
+    display: inline-block !important;
+    width: auto !important;
+
+    margin: 2rem auto !important;
     border-radius: 20px;
-    margin: 2rem auto;  
+
+    transform: rotate(-2deg);
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+#adopt-btn:hover{
+    transform: rotate(0deg) scale(1.05);
 }
 /************* CALL TO ACTION **********/
 
