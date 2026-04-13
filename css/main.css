@@ -628,13 +628,21 @@ footer a:hover{
         width: 100%;
         transform: rotate(-2deg);
     }
-    .process-cards{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+    .process-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        align-items: start;
     }
     .process-cards .card {
-        width: 45%;
+        width: auto;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: flex-start;
+        padding: 2rem;
     }
 
      /* ABOUT: Mission + History side-by-side */
