@@ -77,7 +77,7 @@ h3{
     font-family: 'Elsie', serif;
 }
 
-h1 {
+h1{
     font-size: 2.3rem;
     background: #f5b3d1;
     color: #6a3c91;
@@ -87,7 +87,7 @@ h1 {
     box-shadow: 3px 3px 0 #6a3c91;
 }
 
-h2 {
+h2{
     font-size: 1.8rem;
     background: #ffe38c;
     color: #e07ab1;
@@ -106,7 +106,6 @@ h3{
 p{
     font-size: 0.95rem;
 }
-
 
 
 /********** SKIP LINKS ****************/
@@ -141,18 +140,10 @@ main{
 .section {
     background: #cbb6d9;
     border-radius: 25px;
-
     margin: 2rem 1rem;
     padding: 2rem 1.5rem;
-
     box-shadow: 0 8px 0 #b79acb;
     position: relative;
-}
-
-.section .container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem; /* ✅ consistent spacing */
 }
 
 .section::before {
@@ -167,29 +158,16 @@ main{
     z-index: -1;
 }
 
-img {
-    width: 100%;
-    display: block;
-    border-radius: 8px;
-}
-.cards {
-    gap: 1.5rem;
-}
-
-.pet {
-    gap: 1.5rem;
+.section .container,
+.cards,
+.process-cards,
+.pets {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-
-.hero-content img,
-.card img,
-.pet img, 
-.support img{
-    background: white;
-    padding: 10px;
-    border-radius: 6px;
-}
-
+/************ IMAGES **************/
 
 /************ HEADER *************/
 header{
