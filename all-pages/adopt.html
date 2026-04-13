@@ -22,7 +22,7 @@
         <a href="#cats-heading">Skip to Adopt Cats Section</a>
         <a href="#footer">Skip to Footer</a>
     </div>
-    <header>
+    <header role="banner">
         <div class="logo">
             <img src="../images/logo.png" alt="the logo for the company including a vector dog and cat" itemprop="logo">
         </div>
@@ -38,8 +38,8 @@
     </header>
     <main id="main-content" role="main">
         <!-- adoption process -->
-        <section class="section adopt-process fade-in">
-            <h1 id="adopt-process">Our Adoption Process!</h1>
+        <section id="adopt-process"class="section adopt-process fade-in">
+            <h1>Our Adoption Process!</h1>
 
             <div class="process-cards">
 
@@ -65,7 +65,7 @@
         </section>
 
         <!-- dogs section -->
-        <section class="section pets fade-in">
+        <section class="section pets fade-in" aria-labelledby="dogs-heading">
             <h2 id="dogs-heading">Dogs Available to Adopt</h2>
 
             <div class="pet-card" role="article">
@@ -84,13 +84,13 @@
             </div>
             <div class="pet-card" role="article">
                 <picture>
-                    <source srcset="../images/rocky-dog-600px-small" media="(max-width: 600px)">
+                    <source srcset="../images/rocky-dog-600px-small.jpeg" media="(max-width: 600px)">
                     <img src="../images/rocky-dog-1400px-large.jpeg" alt="Golden dog named Milo" itemprop="image"
                         sizes="(max-width: 600px) 100vw, 50vw">
                 </picture>
                 <h3>Milo</h3>
                 <p>Breed: Golden Retriever</p>
-                <p> Age: 2</p>
+                <p>Age: 2</p>
                 <p>Milo is a playful and affectionate pup who loves making new friends. Whether he’s chasing a ball in
                     the yard or curling up beside you after a long day, Milo is happiest when he’s around people. He’s
                     great with families and would thrive in a home where he can get plenty of exercise and attention.
@@ -119,7 +119,7 @@
 
         <!-- cats section -->
         <section class="section pets fade-in" aria-labelledby="cats-heading">
-            <h2 class="cats-heading">Cats Available to Adopt</h2>
+            <h2 id="cats-heading">Cats Available to Adopt</h2>
 
             <div class="pet-card" role="article">
                 <picture>
@@ -160,7 +160,7 @@
                 </picture>
                 <h3>Sunshine</h3>
                 <p>Breed: Domestic Shorthair</p>
-                <p> Age: 3</p>
+                <p>Age: 3</p>
                 <p>Sunshine is a sweet and curious cat who loves exploring and finding cozy places to nap. He enjoys
                     gentle playtime with toys and will happily curl up beside you once he’s comfortable.</p>
                 <a href="#" class="btn">Learn More</a>
