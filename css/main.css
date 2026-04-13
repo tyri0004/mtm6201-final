@@ -58,10 +58,13 @@ table {
 
 }
 
+
+/******************* BASE ***************/
 body{
     font-family: 'Capriola', sans-serif;
     background: #371c47;
-    line-height: 1.6;
+    background-image: radial-gradient(#ffffff10 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 
 /**************** TYPOGRAPHY *******************/
@@ -135,12 +138,6 @@ p{
     top: 10px;
 }
 
-/**************** BASE STYLES *************/
-body {
-    background: #371c47;
-    background-image: radial-gradient(#ffffff10 1px, transparent 1px);
-    background-size: 20px 20px;
-}
 /******************* LAYOUT ****************/
 
 main{
