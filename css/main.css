@@ -65,6 +65,7 @@ body{
     background: #371c47;
     background-image: radial-gradient(#ffffff10 1px, transparent 1px);
     background-size: 20px 20px;
+    line-height: 1.6;
 }
 
 /**************** TYPOGRAPHY *******************/
@@ -243,7 +244,7 @@ nav a:hover{
     flex-direction: column; 
     gap: 1rem; 
 } 
-.hero-content img {
+.hero-content img{
     background: white;
     padding: 12px 12px 30px 12px; /* thicker bottom like polaroid */
     border-radius: 6px;
@@ -252,6 +253,10 @@ nav a:hover{
     transform: rotate(-2deg);
     max-width: 95%;
     margin: 0 auto;
+}
+
+.hero-content img:hover{
+    transform: rotate(0deg) scale(1.02);
 }
 .mission{ 
     background: #e9c7de; 
