@@ -589,4 +589,10 @@ footer a:hover{
     .hero-content img{
         max-width: 45%;
     }
+
+    .process-cards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
