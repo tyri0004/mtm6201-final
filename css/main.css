@@ -316,7 +316,6 @@ nav a:hover{
 }
 
 .cta a{
-    text-decoration: none;
     color: #6a3c91;
     font-weight: bold;
     display: inline-block;
@@ -381,19 +380,9 @@ nav a:hover{
     box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
-.cards,
-.process-cards,
-.pets{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
 
 .card img{
     width: 95%;
-}
-.card:hover{
-    transform: translateY(-5px);
 }
 
 .card {
@@ -417,7 +406,9 @@ nav a:hover{
     background: #f3ddf0;
 }
 
-
+#adopt-process h1{
+    margin-bottom: 2rem;
+}
 /************** PETS **********/
 
 #adopt-section{
@@ -437,23 +428,10 @@ nav a:hover{
     border-radius: 20px;
     box-shadow: inset 0 0 0 6px #ffffff40;
 }
-.card img,
-.pet img{
-    background: white;
-    padding: 12px 12px 30px 12px;
-    border-radius: 6px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
 
 .pet-card img{
     width: 90%;
 }
-.pet div{
-    background: #f3d98c;
-    padding: 1rem;
-    border-radius: 10px;
-}
-
 
 .pet-card{
     display: flex;
