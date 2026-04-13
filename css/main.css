@@ -257,6 +257,7 @@ nav a:hover{
 
 .hero-content img:hover{
     transform: rotate(0deg) scale(1.02);
+    transition: 0.3s;
 }
 .mission{ 
     background: #e9c7de; 
@@ -386,6 +387,13 @@ nav a:hover{
 
 }
 
+.pets {
+    background: #e9c7de;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+
+    box-shadow: inset 0 0 0 6px #ffffff40;
+}
 .card img,
 .pet img {
     background: white;
@@ -404,23 +412,23 @@ nav a:hover{
 }
 
 .process-cards,
-.pets {
+.pets{
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-.pet-card {
+.pet-card{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-
     background: #f3d98c;
     padding: 1rem;
     border-radius: 15px;
-
     box-shadow: 6px 6px 0 rgba(0,0,0,0.15);
     border: 3px solid white;
+    max-width: 320px;     /* 🔥 key fix */
+    margin: 0 auto;
 }
 
 /****************** SUPPORT ****************/
