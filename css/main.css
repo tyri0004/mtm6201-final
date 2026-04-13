@@ -696,6 +696,11 @@ footer a:hover{
     .section.pets h2{
         grid-column: 1 / -1;
     }
+    .adopt .pets {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 
     .pet-card{
         margin: 0;
@@ -777,10 +782,17 @@ footer a:hover{
     }
 
     /* pets */
+
+    .adopt .pets {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+    }
     .section.pets {
         gap: 3rem;
         padding: 0 2rem;
     }
+
 
     /* success stories */
 
