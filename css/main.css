@@ -579,6 +579,31 @@ footer a:hover{
         padding: 0 1rem;  
     }
 
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: flex !important;
+        position: static;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        background: none;
+        width: auto;
+    }
+
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    .footer-nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
     .cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -586,25 +611,19 @@ footer a:hover{
         align-items: start;
 
     }
-    
+        
     .hero-content {
-    flex-direction: row;
-    align-items: center;
-    gap: 2.5rem;
-    text-align: left;
-}
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+        text-align: left;
+        margin-top: 2rem;
+    }
 
-/* make text take less dominance */
-.hero-content > div {
-    flex: 1;
-}
-
-/* image gets more space + doesn’t shrink too much */
-.hero-content img {
-    max-width: 55%;
-    width: 100%;
-    transform: rotate(-2deg);
-}
+    .hero-content img {
+        width: 100%;
+        transform: rotate(-2deg);
+    }
     .process-cards{
         flex-direction: row;
         flex-wrap: wrap;
