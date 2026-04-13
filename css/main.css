@@ -763,4 +763,42 @@ footer a:hover{
     }
 
     /* about section */
+
+    .about .container {
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    /* impact */
+
+     .impact .container {
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    /* pets */
+    .section.pets {
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    /* success stories */
+
+    .cards {
+        gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    /* call to action */
+
+    .cta .btn-primary {
+        min-width: 400px;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    /* footer */
+    .footer-container {
+        padding: 2rem 4rem;
+    }
 }
