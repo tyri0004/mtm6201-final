@@ -74,6 +74,19 @@ h3{
     font-family: 'Elsie', serif;
 }
 
+h1 {
+    background: #f5b3d1;
+    color: #6a3c91;
+    box-shadow: 3px 3px 0 #6a3c91;
+}
+
+h2 {
+    background: #ffe38c;
+    padding: 0.4rem 1rem;
+    display: inline-block;
+    box-shadow: 2px 2px 0 #e07ab1;
+}
+
 h1{
     font-size: 2.5rem;
     color: #5c3b8a;
@@ -122,6 +135,12 @@ p{
     top: 10px;
 }
 
+/**************** BASE STYLES *************/
+body {
+    background: #371c47;
+    background-image: radial-gradient(#ffffff10 1px, transparent 1px);
+    background-size: 20px 20px;
+}
 /******************* LAYOUT ****************/
 
 main{
@@ -131,6 +150,18 @@ main{
 
 section {
     padding: 2rem 1rem;
+}
+
+.section::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+    background: #e6cde3;
+    border-radius: 25px;
+    z-index: -1;
 }
 
 img {
@@ -254,6 +285,19 @@ nav a:hover{
     box-shadow: 0 8px 14px rgba(0,0,0,0.3);
 }
 
+.cta {
+    background: #e07ab1;
+    border-radius: 30px;
+    text-align: center;
+    padding: 3rem 1rem;
+    box-shadow: inset 0 0 0 6px #ffffff30;
+}
+
+.cta h2 {
+    color: #fff;
+    background: none;
+    box-shadow: none;
+}
 /************ CARDS **************/
 
 .cards{
@@ -265,12 +309,39 @@ nav a:hover{
     gap: 2rem;
 }
 
-.card{
+.card {
     background: #f3d98c;
     padding: 1rem;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
-    transition: 0.3s;
+
+    position: relative; /* ✅ FIX */
+    transform: rotate(-1deg);
+
+    box-shadow: 6px 6px 0 rgba(0,0,0,0.15);
+    border: 3px solid white;
+}
+
+/* alternate tilt */
+.card:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+/* tape */
+.card::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-8deg);
+
+    width: 50px;
+    height: 16px;
+
+    background: rgba(255,255,255,0.7);
+    border-radius: 2px;
+
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .card img{
@@ -278,6 +349,19 @@ nav a:hover{
 }
 .card:hover{
     transform: translateY(-5px);
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px) rotate(0deg) scale(1.02);
+}
+
+.process img {
+    width: 60px;
+    margin: 0 auto 0.5rem;
 }
 
 /************** PETS **********/
@@ -290,6 +374,14 @@ nav a:hover{
 
 }
 
+.card img,
+.pet img {
+    background: white;
+    padding: 12px 12px 30px 12px;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
 .pet img{
     width: 95%;
 }
@@ -297,6 +389,19 @@ nav a:hover{
     background: #f3d98c;
     padding: 1rem;
     border-radius: 10px;
+}
+
+.process-cards,
+.pets {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pet-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 /****************** SUPPORT ****************/
