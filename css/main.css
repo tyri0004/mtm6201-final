@@ -673,6 +673,18 @@ footer a:hover{
         gap: 2rem;
     }
 
+    .impact .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+
+    .impact .container h2 {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+
     .pet-card {
         margin: 0;
     }
