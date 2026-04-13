@@ -684,12 +684,21 @@ footer a:hover{
     }
 
     /* PETS start grid feel */
-    .pets {
+    .section.pets {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        align-items: start;
     }
 
+    /* make the heading span all three columns */
+    .section.pets h2 {
+        grid-column: 1 / -1;
+    }
+
+    .pet-card {
+        margin: 0;
+    }
     .impact .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -702,9 +711,6 @@ footer a:hover{
         text-align: center;
     }
 
-    .pet-card {
-        margin: 0;
-    }
 
     /* SUPPORT section side-by-side feel */
     .support-content {
