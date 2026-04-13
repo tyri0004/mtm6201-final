@@ -573,26 +573,61 @@ footer a:hover{
 
 /******************* TABLET STYLES ****************/
 
-@media screen and(min-width: 786px){
+@media screen and (min-width: 786px){
 
     main{
         padding: 0 1rem;  
     }
 
-    .hero-content{
-        flex-direction: row;
-        align-items: center; 
-        text-align: left;
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
-    }
+        align-items: start;
 
-    .hero-content img{
-        max-width: 45%;
     }
+    
+    .hero-content {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+    text-align: left;
+}
 
+/* make text take less dominance */
+.hero-content > div {
+    flex: 1;
+}
+
+/* image gets more space + doesn’t shrink too much */
+.hero-content img {
+    max-width: 55%;
+    width: 100%;
+    transform: rotate(-2deg);
+}
     .process-cards{
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .process-cards .card {
+        width: 45%;
+    }
+
+    /* PETS start grid feel */
+    .pets {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .pet-card {
+        margin: 0;
+    }
+
+    /* SUPPORT section side-by-side feel */
+    .support-content {
+        flex-direction: row;
+        align-items: stretch;
     }
 }
