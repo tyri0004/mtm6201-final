@@ -301,11 +301,32 @@ nav a:hover{
     margin: 2rem auto 0 auto;
 }
 
+.cta a {
+    text-decoration: none;
+    color: #6a3c91;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1.5rem;
+    background: #ffe38c;
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #6a3c91;
+    box-shadow: 3px 3px 0 #e07ab1;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    transform: translateY(-3px) scale(1.05);
+    background: #f5b3d1;
+}
+
 .cta h2{
-    color: #fff;
+    color: #6a3c91;
     background: none;
     box-shadow: none;
 }
+
 /************ CARDS **************/
 
 .cards{
@@ -380,8 +401,15 @@ nav a:hover{
     margin: 0 auto 0.5rem;
 }
 
+.card-content{
+    padding-top: 1rem;
+}
+
 /************** PETS **********/
 
+#adopt-section{
+    padding-top: 5rem;
+}
 .pet{
     display: flex; 
     flex-direction: column;
@@ -398,15 +426,15 @@ nav a:hover{
     box-shadow: inset 0 0 0 6px #ffffff40;
 }
 .card img,
-.pet img {
+.pet img{
     background: white;
     padding: 12px 12px 30px 12px;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-.pet img{
-    width: 95%;
+.pet-card img{
+    width: 90%;
 }
 .pet div{
     background: #f3d98c;
@@ -460,7 +488,10 @@ nav a:hover{
 }
 /****************** SUPPORT ****************/
 
-.support-content {
+.support{
+    padding-top: 5rem;
+}
+.support-content{
     background: #e9c7de;
     padding: 2rem 1rem;
     border-radius: 20px;
