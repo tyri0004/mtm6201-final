@@ -414,13 +414,6 @@ nav a:hover{
 #adopt-section{
     padding-top: 5rem;
 }
-.pet{
-    display: flex; 
-    flex-direction: column;
-    gap: 1rem; 
-    padding-top: 5rem;
-
-}
 
 .pets{
     background: #e9c7de;
