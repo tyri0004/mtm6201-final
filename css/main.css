@@ -351,7 +351,7 @@ nav a:hover{
     gap: 2rem;
 }
 
-.card {
+.card{
     background: #f3d98c;
     padding: 1rem;
     border-radius: 15px;
@@ -374,19 +374,16 @@ nav a:hover{
     top: -12px;
     left: 50%;
     transform: translateX(-50%) rotate(-8deg);
-
     width: 50px;
     height: 16px;
-
     background: rgba(255,255,255,0.7);
     border-radius: 2px;
-
     box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
 .cards,
 .process-cards,
-.pets {
+.pets{
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -407,7 +404,7 @@ nav a:hover{
     transform: translateY(-8px) rotate(0deg) scale(1.02);
 }
 
-.process img {
+.process img{
     width: 60px;
     margin: 0 auto 0.5rem;
 }
@@ -545,7 +542,7 @@ nav a:hover{
 /************** CONTACT ***********/
 
 .contact-cta{
-    background: #e07ab1;
+    background: #e6cde3;
     border-radius: 20px;
     margin: 1rem;
     padding: 2rem 1rem;
@@ -557,7 +554,7 @@ nav a:hover{
     margin: 1rem auto; 
 }
 .contact-cta h2{
-    color: #ffe38c;
+    color: #6a3c91;
 }
 
 /******************* FOOTER *************/
