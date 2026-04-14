@@ -98,6 +98,35 @@ I also improved my confidence in writing HTML and CSS without relying too much o
 
 ### Figma File link
 
+## Figma Mockups
+
+Below are my final mockups created in Figma. These designs were used as the foundation for building the website layout, structure, and visual style.
+
+### Home Page
+<img src="images/homepage-tablet-mockup.png">
+
+<img src="images/hompage-mobile-mockup.png">
+
+<img src="images/homepage-desktop-mockup.png">
+
+
+---
+
+### About Page
+<img src="images/aboutpage-desktop-mockup.png">
+
+<img src="images/aboutpage-mobile-mockup.png">
+
+<img src="images/aboutpage-tablet-mockup.png">
+
+---
+
+### Adopt Page
+<img src="images/adoptpage-desktop-mockup.png">
+
+<img src="images/adoptpage-mobile-mockup.png">
+
+<img src="images/adoptpage-tablet-mockup.png">
 
 
 ## Final Notes
