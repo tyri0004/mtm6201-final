@@ -14,6 +14,8 @@
 <body itemscope itemtype="https://schema.org/AnimalShelter">
 
     <!-- skip links -->
+
+    <!-- these help keyboard users jump quickly to sections instead of tabbing through everything -->
     <div class="skip-links">
         <a href="#main-content">Skip to Main Content</a>
         <a href="#primary-nav">Skip to Navigation</a>
@@ -22,12 +24,25 @@
         <a href="#cats-heading">Skip to Adopt Cats Section</a>
         <a href="#footer">Skip to Footer</a>
     </div>
+
+    <!-- header-->
+    <!-- role banner tells screen readers this is the top/main header -->
     <header role="banner">
         <div class="logo">
-            <img src="../images/logo.png" alt="the logo for the company including a vector dog and cat" itemprop="logo">
+            <!-- logo of the site -->
+
+            <img src="../images/logo.png" alt="the logo for the company including a vector dog and cat" itemprop="logo"> <!-- helps SEO understand it's the logo -->
         </div>
+        </div>
+
+        <!-- hamburger menu button (only visible on mobile) -->
         <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
             aria-controls="primary-nav">☰</button>
+
+        <!-- aria-expanded updates with javascript to tell screen readers if menu is open or closed -->
+        <!-- aria-controls connects the button to the nav -->
+
+        <!-- main nav -->
         <nav id="primary-nav" role="navigation" aria-label="Main Navigation">
             <a href="../index.html">Home</a>
             <a href="../all-pages/about.html">About</a>
@@ -36,13 +51,19 @@
             <a href="#">Contact</a>
         </nav>
     </header>
+
+    <!-- main content -->
+    <!-- role main tells assistive tech this is the main part of the page -->
     <main id="main-content" role="main">
         <!-- adoption process -->
+        <!-- explains steps for adopting -->
         <section id="adopt-process"class="section adopt-process fade-in">
             <h1>Our Adoption Process!</h1>
 
+         <!-- container holding all process steps -->
             <div class="process-cards">
-
+                
+                <!-- each step is its own card -->
                 <div class="card process" role="article">
                     <img id="process-icon" src="../images/paws.png" alt="vector drawing of pink paws">
                     <h2>1: Find your Perfect Match</h2>
@@ -65,11 +86,15 @@
         </section>
 
         <!-- dogs section -->
+        <!-- aria-labelledby connects this section to its heading -->
         <section class="section pets fade-in" aria-labelledby="dogs-heading">
             <h2 id="dogs-heading">Dogs Available to Adopt</h2>
 
+            <!-- each dog is its own article/card -->
             <div class="pet-card" role="article">
                 <picture>
+
+                    <!-- smaller image for mobile -->
                     <source srcset="../images/daisy-pug-600px-small.jpeg" media="(max-width: 600px)">
                     <img src="../images/daisy-pug-1400px-large.jpeg" alt="pug named daisy" itemprop="image"
                         sizes="(max-width: 600px) 100vw, 50vw">
@@ -82,6 +107,8 @@
                     and lots of fun. She’ll reward you with endless love and tail wags.</p>
                 <a href="#" class="btn">Learn More</a>
             </div>
+
+            <!-- repeat structure for other dogs -->
             <div class="pet-card" role="article">
                 <picture>
                     <source srcset="../images/rocky-dog-600px-small.jpeg" media="(max-width: 600px)">
@@ -112,6 +139,8 @@
                     fetch, and spending time with people. Charlie is very loyal and quickly forms strong bonds with his
                     family. With his playful personality and loving nature, he would thrive in an active home where he
                     can get plenty of exercise and attention.</p>
+
+                <!-- learn more button would lead you to a full page on the animal, if designed -->
                 <a href="#" class="btn">Learn More</a>
             </div>
 
@@ -121,6 +150,7 @@
         <section class="section pets fade-in" aria-labelledby="cats-heading">
             <h2 id="cats-heading">Cats Available to Adopt</h2>
 
+            <!-- repeats same structure as the dogs -->
             <div class="pet-card" role="article">
                 <picture>
                     <source srcset="../images/scratches-cat-600px-small.jpeg" media="(max-width: 600px)">
@@ -134,8 +164,12 @@
                     relaxing in sunny spots and spending quiet time with his favorite humans. Scratches would be
                     happiest in a calm home where he can feel safe, loved, and spoiled with plenty of chin scratches.
                 </p>
+
+                <!-- learn more buttons would lead you to a full page of the animal, if designed -->
                 <a href="#" class="btn">Learn More</a>
             </div>
+
+            <!-- more cats -->
             <div class="pet-card" role="article">
                 <picture>
                     <source srcset="../images/luna-cat-600px-small.jpeg" media="(max-width: 600px)">
@@ -234,6 +268,7 @@
 
     </footer>
 
+    <!-- javascript for the menu toggle -->
     <script>
         const toggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('#primary-nav');
