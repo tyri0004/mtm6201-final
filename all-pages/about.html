@@ -11,9 +11,12 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 
+<!-- schema tells search engines this is an animal shelter -->
 <body itemscope itemtype="https://schema.org/AnimalShelter">
 
     <!-- skip links -->
+
+    <!-- helps keyboard users jump quickly to important sections, is hidden unless tabbed over -->
     <div class="skip-links">
         <a href="#main-content">Skip to Main Content</a>
         <a href="#primary-nav">Skip to Navigation</a>
@@ -22,12 +25,27 @@
         <a href="#adopt-section">Skip to Adopt Section</a>
         <a href="#footer">Skip to Footer</a>
     </div>
+
+    <!-- header -->
+
+    <!-- role banner indentifies this as the main header for assistive teach -->
     <header role="banner">
+
+        <!-- logo section -->
         <div class="logo">
+            <!-- itemprop helps SEO understand branding -->
             <img src="../images/logo.png" alt="the logo for the company including a vector dog and cat" itemprop="logo">
         </div>
+        <!-- hamburger menu button mobile only -->
+         <!-- aria label explains the button purpose -->
+          <!-- aria expanded updates dynamically when clicked -->
+        <!-- aria controls connects button to nav -->
         <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
             aria-controls="primary-nav">☰</button>
+
+        <!--  main nav-->
+        <!-- role navigation defines this region -->
+        <!-- aria-label gives it a clear name -->
         <nav id="primary-nav" role="navigation" aria-label="Main Navigation">
             <a href="../index.html">Home</a>
             <a href="../all-pages/about.html">About</a>
@@ -36,24 +54,34 @@
             <a href="#">Contact</a>
         </nav>
     </header>
+
+    <!-- main content -->
+    <!-- role main helps screen readers jump directly here -->
     <main id="main-content" role="main">
         <!-- about section -->
+         <!-- contains mission and history -->
         <section class="section about fade-in">
             <div class="container">
 
+                <!-- main heading of page -->
+                <!-- itemprop name helps describe the organization -->
                 <h1 class="section-title" itemprop="name">About Pawsitive Futures!</h1>
 
-
+                 <!-- mission card -->
+                <!-- role article treats this as a standalone piece of content -->
                 <div class="card about-card" role="article">
+
+                    <!-- responsive image sizes -->
                     <picture>
                         <source srcset="../images/teen-cat-600px-large.jpeg" media="(max-width: 600px)">
                         <img src="../images/teen-cat-1400px-large.jpeg" alt="teen smiling while holding a cat"
                             itemprop="image" sizes="(max-width: 600px) 100vw, 50vw">
                     </picture>
 
-                    <!-- Mission -->
+                    <!-- text content-->
                     <div class="card-content">
                         <h2>Our Mission</h2>
+                        <!-- itemprop description helps SEO describe organization -->
                         <p itemprop="description">
                             At Pawsitive Futures, our mission is to rescue, care for, and find loving forever homes for
                             animals in need. We believe every pet deserves safety, compassion, and the chance to live a
@@ -72,14 +100,13 @@
                     </div>
                 </div>
 
-                <!-- History -->
+                 <!-- history -->
+                <!-- same structure for consistency -->
                 <div class="card about-card" role="article">
                     <picture>
                         <source srcset="../images/women-cat-600px-small.jpeg" media="(max-width: 600px)">
                         <img src="../images/women-cat-1400px-large.jpeg" alt="woman snuggling cat" itemprop="image" sizes="(max-width: 600px) 100vw, 50vw">
                     </picture>
-
-
                     <div class="card-content">
                         <h2>Our History</h2>
                         <p itemprop="description">
@@ -114,12 +141,16 @@
 
                 <h2 id="impact-heading" class="section-title">Our Impact</h2>
 
+                <!-- section heading  -->
+
                 <div class="card" role="article">
                     <picture>
                         <source srcset="../images/rocky-dog-600px-small.jpeg" media="(max-width: 600px)">
                         <img src="../images/rocky-dog-1400px-large.jpeg" alt="golden named rocky laying on carpet"
                             itemprop="image" sizes="(max-width: 600px) 100vw, 50vw">
                     </picture>
+
+                    <!-- each card has a story -->
                     <h3>Rocky's Second Chance</h3>
                     <p>Rocky arrived at Pawsitive Futures underweight and scared, but with care and training he regained
                         his strength and trust before being adopted by a loving family, where he now enjoys playing in
@@ -151,10 +182,14 @@
         </section>
 
         <!-- Success Stories -->
+        <!-- aria-labelledby connects section to its heading -->
         <section class="success fade-in" aria-labelledby="success-heading">
             <h2 id="success-heading">Success Stories</h2>
 
             <div class="cards" role="list">
+                <!-- role list makes div behave like a list for accessibility -->
+
+                <!-- each card has a list item -->
                 <div class="card" role="listitem">
                     <picture>
                         <source srcset="../images/emma-oliver-600px-small.jpeg" media="(max-width: 600px)">
@@ -191,7 +226,7 @@
         </section>
 
         <!-- call to action section -->
-
+        <!-- button links to adopt page -->
         <section id="adopt-section" class="section cta">
             <div class="container">
                 <h2>Save a Pet!</h2>
@@ -201,6 +236,7 @@
     </main>
 
     <!-- Footer -->
+     <!-- role content infor indentifies footer for assistive teach  -->
     <footer id="footer" role="contentinfo">
         <div class="footer-container">
 
@@ -242,7 +278,8 @@
         </div>
 
     </footer>
-
+    
+    <!-- javascript for mobile menu nav toggle -->
     <script>
         const toggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('#primary-nav');
