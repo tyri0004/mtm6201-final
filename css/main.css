@@ -168,6 +168,7 @@ main{
     z-index: -1;
 }
 
+/* this allows for a default stacked layout to containers, and the cards */
 .section .container,
 .cards,
 .process-cards,
@@ -178,12 +179,15 @@ main{
 }
 
 /************ IMAGES **************/
+
+/* makes all images fill their container, it also blocks any unwanted spacing */
 img{
     width: 100%;
     display: block;
     border-radius: 8px;
 }
 
+/* this gives off a polaroid type of style to the images with the white border */
 .card img,
 .pet-card img{
     background: white;
@@ -192,6 +196,8 @@ img{
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 /************ HEADER *************/
+
+/* makes sure logo is smaller and makes a top bar at the top of the page*/
 header{
     background-color: #e6cde3;
     padding: 1rem;
@@ -206,6 +212,10 @@ header{
 }
 
 /***************** NAV  *************************/
+
+/* mobile nav is hidden, and toggled open by added javascript */
+
+/* hamburger button only visible on mobile */
 .menu-toggle{
     font-size: 2rem;
     background: none;
@@ -213,6 +223,7 @@ header{
     cursor: pointer;
 }
 
+/* nav sits below the header when open on mobile */
 nav {
     display: none;
     position: absolute;
@@ -225,6 +236,7 @@ nav {
     z-index: 9999;
 }
 
+/* javascript adds this class when the hamburger is clicked */
 nav.active{
     display: flex; 
 }
@@ -240,7 +252,9 @@ nav a:hover{
     color: #6a3c91;
 }
 
-/****************** HERO ***************/ 
+/****************** HERO ***************/
+
+/* this section controls the larger welcome banner at the top of the homepage */
 .hero{ 
     background: #cbb6d9; 
     border-radius: 20px; 
@@ -253,6 +267,8 @@ nav a:hover{
     flex-direction: column; 
     gap: 1rem; 
 } 
+
+/* hero image is styled as a polaroid with a slight tilt for the scrapbook effect  */
 .hero-content img{
     background: white;
     padding: 12px 12px 30px 12px; /* thicker bottom like polaroid */
@@ -263,10 +279,14 @@ nav a:hover{
     margin: 1rem auto;
 }
 
+/* makes the hero image rotate and increase in size when hovered, smoothly */
+
 .hero-content img:hover{
     transform: rotate(0deg) scale(1.02);
     transition: 0.3s;
 }
+
+/* mission text box inside the hero */
 .mission{ 
     background: #e9c7de; 
     padding: 1rem; 
@@ -277,7 +297,7 @@ nav a:hover{
 
 
 /********************* BUTTONS ****************/
-
+/* ensures all buttons have the same base styles and that all links look like buttons */
 .btn, .cta{
     background: #6a3c91;
     color: #f5b3d1;
@@ -296,6 +316,8 @@ nav a:hover{
     transform: translateY(-3px);
 }
 
+/* the large adopt button on the homepage gets extra size and styling */
+
 #adopt-btn{
     padding: 1rem 2rem;   /* override big padding */
     font-size: 1.5rem;
@@ -307,11 +329,14 @@ nav a:hover{
     transition: 0.3s;
 }
 
+/* ensures only the adopt button gets the yellow hover and scales up */
 #adopt-btn:hover{
     background: #f3d98c;
     transform: rotate(0deg) scale(1.05);
 }
 /************* CALL TO ACTION **********/
+
+/* ensures a pink banner for added flare */
 
 .cta{
     background: #e07ab1;
@@ -342,6 +367,7 @@ nav a:hover{
     background: #f5b3d1;
 }
 
+/* this overrides the default yellow h2 style inside the cta so that it blends in */
 .cta h2{
     color: #6a3c91;
     background: none;
@@ -350,6 +376,7 @@ nav a:hover{
 
 /************ CARDS **************/
 
+/* card container with a light purple background */
 .cards{
     background: #d8c6e3;
     padding: 2rem;
@@ -359,6 +386,7 @@ nav a:hover{
     gap: 2rem;
 }
 
+/* each card tilts slightly */
 .card{
     background: #f3d98c;
     padding: 1rem;
@@ -370,12 +398,12 @@ nav a:hover{
     border: 3px solid white;
 }
 
-/* alternate tilt */
+/* each card tilts slightly staggered to give a pinned photo scrapbook feel */
 .card:nth-child(even) {
     transform: rotate(1deg);
 }
 
-/* tape */
+/* tape strip decorations at the top of each card */
 .card::before{
     content: "";
     position: absolute;
@@ -394,6 +422,7 @@ nav a:hover{
     width: 95%;
 }
 
+/* cards straighten and lift on hover */
 .card {
     transition: all 0.3s ease;
 }
@@ -402,6 +431,7 @@ nav a:hover{
     transform: translateY(-8px) rotate(0deg) scale(1.02);
 }
 
+/* smaller icon images inside the adoption process cards */
 .process img{
     width: 60px;
     margin: 0 auto 0.5rem;
@@ -411,19 +441,23 @@ nav a:hover{
     padding-top: 1rem;
 }
 
+/* light pink background for the process step icons */
 #process-icon{
     background: #f3ddf0;
 }
 
+/* adds space below the h1 on the adopt process section */
 #adopt-process h1{
     margin-bottom: 2rem;
 }
 /************** PETS **********/
 
+/* extra top padding so the tape edoesnt get clipped */
 #adopt-section{
     padding-top: 5rem;
 }
 
+/* pink container that wraps all the pet cards */
 .pets{
     background: #e9c7de;
     padding: 2rem 1rem;
@@ -435,6 +469,7 @@ nav a:hover{
     width: 90%;
 }
 
+/* each pet card is a yellow polaroid style tile with a tilt */
 .pet-card{
     display: flex;
     flex-direction: column;
@@ -449,6 +484,7 @@ nav a:hover{
     position: relative;
 }
 
+/* tape strip at the top of each pet card */
 .pet-card::before {
     content: "";
     position: absolute;
@@ -461,6 +497,8 @@ nav a:hover{
     border-radius: 2px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
+
+/* alternating tilts so the cards look naturally placed */
 .pet-card {
     transform: rotate(-1.5deg);
 }
@@ -477,6 +515,8 @@ nav a:hover{
 .support{
     padding-top: 5rem;
 }
+
+/* pink container similar to the pets section */
 .support-content{
     background: #e9c7de;
     padding: 2rem 1rem;
@@ -488,6 +528,7 @@ nav a:hover{
     gap: 2rem;
 }
 
+/* text card inside the support section which is slightly tilted */
 .support-content div{
     background: #f3d98c;
     padding: 1.5rem;
@@ -497,6 +538,8 @@ nav a:hover{
     transform: rotate(1deg);
     position: relative;
 }
+
+/* tape strip on the support text card */
 .support-content div::before {
     content: "";
     position: absolute;
@@ -509,6 +552,7 @@ nav a:hover{
     transform: rotate(-10deg);
 }
 
+/* support image styled as a polaroid with a tilt and a box shadow */
 .support-content img{
     width: 90%;
     background: #cbb6d9;
@@ -527,6 +571,7 @@ nav a:hover{
     text-align: center;
 }
 
+/* ensure the envelope icon is smaller and nicely spaced above the contact button */
 .contact-cta img{
     width: 80px; 
     margin: 1rem auto; 
@@ -543,12 +588,14 @@ footer{
     background: #e6cde3;
 }
 
+/* stacks the three footer columns on mobile */
 .footer-container{
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
 
+/* nav and social links stacked vertically  */
 .footer-nav ul, 
 .footer-social ul{
     display: flex;
@@ -566,6 +613,7 @@ footer a:hover{
 }
 /************ ANIMATIONS ***************/
 
+/* fade in effect applied to sections as the page loads */
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -584,20 +632,25 @@ footer a:hover{
 
 @media screen and (min-width: 768px){
 
+    /* slightly smaller heading and text inside section */
     .section h2{
         font-size: 1.6rem;
     }
     .section p{
         font-size: 0.8rem;
     }
+
+     /* small side padding so content doesn't touch the edges */
     main{
         padding: 0 1rem;  
     }
 
+    /* hamburger button is hidden for tablet */
     .menu-toggle{
         display: none;
     }
 
+    /* nav switches to horizontal row in the header, and the !important ensures that this happpens no matter what */
     nav{
         display: flex !important;
         position: static;
@@ -612,6 +665,7 @@ footer a:hover{
         padding: 0.5rem 1rem;
     }
 
+    /* footer n av links sit ina horizontal row instead of a list */
     .footer-nav ul {
         display: flex;
         flex-direction: row;
@@ -620,9 +674,12 @@ footer a:hover{
         flex-wrap: wrap;
     }
 
+    /* quick links heading is hidden for visual appeal */
     .footer-nav h3{
         display: none;
     }
+
+    /* success and impact cards sit in a 3-column grid */
     .cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -630,7 +687,8 @@ footer a:hover{
         align-items: start;
 
     }
-        
+
+    /* hero switches to a side by side image and text layout */
     .hero-content{
         flex-direction: row;
         align-items: center;
@@ -643,12 +701,16 @@ footer a:hover{
         width: 100%;
         transform: rotate(-2deg);
     }
+
+    /* adoption process steps sit aligned side by side */
     .process-cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
         align-items: start;
     }
+
+    /* ensures each process card gets the same height and centered content */
     .process-cards .card {
         width: auto;
         min-height: 300px;
@@ -660,13 +722,14 @@ footer a:hover{
         padding: 2rem;
     }
 
+    /* ensures a smalled heading side inside the process cards for it to sit nicely */
     .process-cards h2{
         font-size: 1rem;
     }
 
-     /* ABOUT: Mission + History side-by-side */
+    
 
-    /* ABOUT WRAPPER */
+    /* about page mission and history sit side by side */
     .about .container{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -677,23 +740,21 @@ footer a:hover{
         align-items: start;
     }
 
-    /* TITLE */
+    /* page title spans both columns */
     .about .container h1{
         grid-area: title;
         text-align: center;
     }
 
-    /* FIRST CARD */
     .about .about-card:nth-of-type(1){
         grid-area: mission;
     }
 
-    /* SECOND CARD  */
     .about .about-card:nth-of-type(2){
         grid-area: history;
     }
 
-    /* PETS start grid feel */
+    /* adopt page dogs and cats each sit in a 3-column grid */
     .section.pets{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -705,6 +766,8 @@ footer a:hover{
     .section.pets h2{
         grid-column: 1 / -1;
     }
+
+    /* homepage pets section uses a 2-colummn grid since there are 4 cards */
     .adopt .pets {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -712,10 +775,13 @@ footer a:hover{
         align-items: start;
     }
 
+    /* removes the mobile centering and max-width so cards fill the grid */
     .pet-card{
         margin: 0;
         max-width: 100%;
     }
+
+    /* impact cards sit in a 3 column grid */
     .impact .container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -723,13 +789,14 @@ footer a:hover{
         align-items: start;
     }
 
+    /* impact heading spans all three columns */
     .impact .container h2{
         grid-column: 1 / -1;
         text-align: center;
     }
 
 
-    /* SUPPORT section side-by-side feel */
+    /* support section switches to side by side image and text */
     .support-content{
         flex-direction: row;
         align-items: stretch;
@@ -738,13 +805,17 @@ footer a:hover{
     
 }
 
+/*********************** DESKTOP STYLES **************/
 @media screen and (min-width: 1200px) {
+
+    /* wider padding and a higher mac-width keeps content centered on desktop */
     main{
         padding: 0 4rem; 
         max-width: 1400px; 
         margin: 0 auto ; 
     }
 
+    /* slightly larger heading and body text at desktop size */
     .section h2{
         font-size: 1.5rem;  
     }
@@ -753,7 +824,7 @@ footer a:hover{
         font-size: 1rem;
     }
 
-    /* nav */
+    /* more spacing between nav links */
     nav{
         gap: 2rem; 
     }
@@ -763,7 +834,7 @@ footer a:hover{
         padding: 0.5rem 1.5rem; 
     }
 
-    /* process cards */
+    /* more breathing room between process cards */
 
     .process-cards {
         gap: 3rem;
@@ -771,6 +842,7 @@ footer a:hover{
         align-items: start;
     }
 
+    /* removes min-height and vertically centers the card content */
     .process-cards .card {
         min-height: unset;
         max-height: 350px;
@@ -779,53 +851,59 @@ footer a:hover{
         justify-content: center;
     }
 
-    /* about section */
+    /* more gap between the about mission and history cards */
 
     .about .container {
         gap: 3rem;
         padding: 0 2rem;
     }
 
-    /* impact */
+    /* more gap between the  impact cards */
 
      .impact .container {
         gap: 3rem;
         padding: 0 2rem;
     }
 
-    /* ADOPT PAGE PETS */
+    /* adopt page pets cards strech to equal height so that nothing looks uneven */
     .section.pets {
         gap: 3rem;
         align-items: stretch;
     }
 
+    /* each pet card fills the full column height with content stacked vertically */
     .section.pets .pet-card {
         height: 100%;
         display: flex;
         flex-direction: column;
     }
 
+    /* fixed image height keeps all cards uniform */
     .section.pets .pet-card img {
         width: 90%;
         height: 220px;
         object-fit: cover;
     }
 
+    /* description text grows to fill space and pushes the button down */
     .section.pets .pet-card p {
         flex-grow: 1;
     }
 
+    /* button always sits at the bottom of each card */
     .section.pets .pet-card .btn {
         margin-top: auto;
         align-self: flex-start;
     }
-    /* pets */
+    
+    /* homepage pets expand to a four column grid  */
     .adopt .pets {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 3rem;
     }
 
+    /* smaller text inside homepage pet cards so they don't feel crowded */
      .adopt .pets .pet-card p {
         font-size: 0.75rem;
     }
@@ -834,19 +912,20 @@ footer a:hover{
         font-size: 1rem;
     }
 
+    /* fixed image height to match the adopt page cards */
     .adopt .pets .pet-card img {
         width: 90%;
         object-fit: cover;
     }
 
-    /* success stories */
+    /* more gap between the success story card */
 
     .cards {
         gap: 3rem;
         padding: 0 2rem;
     }
 
-    /* footer */
+    /* more padding inside the footer*/
     .footer-container {
         padding: 2rem 4rem;
     }
