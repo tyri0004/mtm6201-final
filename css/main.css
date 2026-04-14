@@ -51,7 +51,7 @@ table {
 
 /*************** FONTS *******************/
 
-/* main heading */
+/* adds custom font on to page */
 @font-face {
     font-family: 'Beauty Rachela';
     src: url(../fonts/BeautyRachela-Regular.otf);
@@ -63,21 +63,25 @@ table {
 body{
     font-family: 'Capriola', sans-serif;
     background: #371c47;
-    background-image: radial-gradient(#ffffff10 1px, transparent 1px);
+    /* this adds a very subtle dot pattern layered over the background colour to give it a notebook vibe */
+    background-image: radial-gradient  (#ffffff10 1px, transparent 1px);    
     background-size: 20px 20px;
     line-height: 1.6;
 }
 
 /**************** TYPOGRAPHY *******************/
 
+/* h1 and h2 use the custom font */
 h1, h2{
     font-family: 'Beauty Rachela', cursive;
 }
 
+/* h3 usese the softer google font */
 h3{
     font-family: 'Elsie', serif;
 }
 
+/* h1 is styled as having a pink background with a hard box shadow of purple */
 h1{
     font-size: 2.3rem;
     background: #f5b3d1;
@@ -88,6 +92,7 @@ h1{
     box-shadow: 3px 3px 0 #6a3c91;
 }
 
+/* h2 styled as a yellow tag with a pink shadow */
 h2{
     font-size: 1.8rem;
     background: #ffe38c;
@@ -111,6 +116,7 @@ p{
 
 /********** SKIP LINKS ****************/
 
+/* ensures skip links are hidden */
 .skip-links{
     position: absolute;
     top: 0;
@@ -118,6 +124,7 @@ p{
     z-index: 9999;
 }
 
+/* kept off-screen until focused by keyboard navigation */
 .skip-links a{
     position: absolute;
     left: -999px;
@@ -132,12 +139,13 @@ p{
 }
 
 /******************* LAYOUT ****************/
-
+/* centers main content and limits how wide it gets */
 main{
     max-width: 1100px;
     margin: 0 auto;
 }
 
+/* shared styles for all purple section blocks */
 .section {
     background: #cbb6d9;
     border-radius: 25px;
@@ -147,6 +155,7 @@ main{
     position: relative;
 }
 
+/* lighter shadow block behind each section for a stacked paper effect */
 .section::before {
     content: "";
     position: absolute;
