@@ -64,7 +64,7 @@ body{
     font-family: 'Capriola', sans-serif;
     background: #371c47;
     /* this adds a very subtle dot pattern layered over the background colour to give it a notebook vibe */
-    background-image: radial-gradient  (#ffffff10 1px, transparent 1px);    
+    background-image: radial-gradient(#ffffff10 1px, transparent 1px);    
     background-size: 20px 20px;
     line-height: 1.6;
 }
