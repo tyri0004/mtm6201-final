@@ -9,13 +9,16 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Elsie&family=Capriola&display=swap" rel="stylesheet">
 
+    <!-- style sheet -->
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
+<!-- schema markup tells the search engines that this is an animal shelter -->
 <body itemscope itemtype="https://schema.org/AnimalShelter">
 
     <!-- skip links -->
+     <!-- these are hidden until focused, and helps keyboard and screen reader user jump to key sections -->
     <div class="skip-links">
         <a href="#main-content">Skip to Main Content</a>
         <a href="#primary-nav">Skip to Navigation</a>
@@ -25,12 +28,20 @@
         <a href="#footer">Skip to Footer</a>
     </div>
 
+    <!-- header -->
+
+    <!-- the header containes the logo and main navigation -->
     <header role="banner">
         <div class="logo">
             <img src="images/logo.png" alt="the logo for the company including a vector dog and cat" itemprop="logo">
         </div>
+        <!-- hamburger button only visible on mobile and toggles open and closed -->
         <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
             aria-controls="primary-nav">☰</button>
+
+        <!-- main nav -->
+
+        <!-- main nav hidden on mobile until hambuger is clicked -->
         <nav id="primary-nav" role="navigation" aria-label="Main Navigation">
             <a href="index.html">Home</a>
             <a href="all-pages/about.html">About</a>
@@ -39,34 +50,47 @@
             <a href="#">Contact</a>
         </nav>
     </header>
+
+    <!-- main section -->
     <main id="main-content" role="main">
 
-        <!-- Hero Section -->
+        <!-- hero section with a photo and mission statement, aria label ensures screenreaders can pinpoint the heading -->
         <section class="hero fade-in" aria-labelledby="hero-heading">
             <h1 id="hero-heading" itemprop="name">Welcome to Pawsitive Futures!</h1>
 
+            <!-- hero content with image -->
             <div class="hero-content">
+
+                <!-- responsive image sizes so that the smaller version loads on mobile screen -->
                 <picture>
                     <source srcset="images/dog-one-ear-600px-small.jpeg" media="(max-width: 600px)">
                     <img src="images/dog-one-ear-1400px-large.jpeg" alt="Dog with one ear down" itemprop="image" sizes="(max-width: 600px) 100vw, 50vw">
                 </picture>
 
+                <!-- mission -->
                 <div class="mission">
                     <h2>Mission</h2>
+                    <!-- itemprop helps SEO decribe the website easily -->
                     <p itemprop="description">At Pawsitive Futures, our mission is to give every animal the opportunity
                         for a safe, loving, and permanent home. We are dedicated to rescuing, caring for, and rehoming
                         pets while promoting responsible pet ownership and compassion for animals in our community.
                         Through adoption, education, and advocacy, we strive to create brighter, pawsitive futures for
                         pets and the families who welcome them into their lives.</p>
+                    <!-- call to action button links to the about page -->
                     <a href="all-pages/about.html" class="btn">Learn More</a>
                 </div>
             </div>
         </section>
         <!-- Success Stories Section -->
         <section class="success fade-in" aria-labelledby="success-heading">
+
+            <!-- section heading -->
             <h2 id="success-heading">Success Stories</h2>
 
+            <!-- role list makes this act like a list for screen readers -->
             <div class="cards" role="list">
+
+                <!-- each card is treated like a list item and is divided by divs for easy calling in css -->
                 <div class="card" role="listitem">
                     <picture>
                         <source srcset="images/emma-oliver-600px-small.jpeg" media="(max-width: 600px)">
@@ -77,6 +101,8 @@
                     <p>"I was nervous about adopting my first dog, but Pawsitive Futures made it easy, helping me find
                         Oliver—my little shadow who made my apartment feel like home.”</p>
                 </div>
+
+                <!-- structure continues for consistency -->
                 <div class="card" role="listitem">
                     <picture>
                         <source srcset="images/lucy-maple-600px-small.jpeg" media="(max-width: 600px)">
@@ -88,6 +114,7 @@
                     <p>“The adoption process at Pawsitive Futures was thoughtful and caring, and thanks to their
                         support, our dog Maple settled in right away and quickly claimed every couch in the house.”</p>
                 </div>
+                <!-- continues -->
                 <div class="card" role="listitem">
                     <picture>
                         <source srcset="images/daniel-bella-600px-small.jpeg" media="(max-width: 600px)">
@@ -104,6 +131,7 @@
             <h2 id="adopt-heading">Pets Available to Adopt</h2>
             <div class="pets">
             
+                <!-- each pet has its own article, and the other pets follow the same structure -->
                 <div class="pet-card" role="article">
                     <picture>
                         <source srcset="images/daisy-pug-600px-small.jpeg" media="(max-width: 600px)">
@@ -161,6 +189,7 @@
                 </div>
             </div>
 
+            <!-- main call to action button links to adopt page for user to view more pets -->
             <a href="all-pages/adopt.html" id="adopt-btn" class="cta">Adopt With us Today!</a>
         </section>
 
@@ -169,6 +198,7 @@
         <section class="support fade-in" aria-labelledby="support-heading">
             <h2 id="support-heading">Want to Support Us?</h2>
 
+            <!-- separated into divs like the other content for easy calling -->
             <div class="support-content">
                 <picture>
                     <source srcset="images/cat-dog-600px-small.png" media="(max-width: 600px)">
@@ -185,6 +215,8 @@
         </section>
 
         <!-- Contact Call to Action -->
+
+        <!-- contact heading for screen readers to easily connect to the contact heading -->
         <section class="contact-cta fade-in" aria-labelledby="contact-heading">
             <h2 id="contact-heading">Want to Reach Out?</h2>
             <picture>
@@ -198,6 +230,8 @@
     <!-- footer -->
     <footer id="footer" role="contentinfo">
         <div class="footer-container">
+
+            <!-- contact info role tells screen readers this is the footer -->
 
             <!-- footer nav -->
             <nav class="footer-nav" aria-label="Footer Navigation">
@@ -238,6 +272,7 @@
 
     </footer>
 
+    <!-- javascript for the hamburger menu to toggle open and closed -->
     <script>
         const toggle = document.querySelector('.menu-toggle');
         const nav = document.querySelector('#primary-nav');
